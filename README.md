@@ -17,21 +17,28 @@ Make 4 tables in that database user, products, cart and orders which I give in s
 Vendor Role:
 
 1.Product Management: Vendors can add, update, and delete products.
+
 2.Product Details: Manage images, descriptions, and pricing of products.
 
 Customer Role:
 1.Product Browsing: Customers can view all available products.
+
 2.Cart Functionality: Add products to a cart for later purchase.
+
 3.Order Placement: Customers can purchase products and track their orders.
 
 Admin Role:
 1.Platform Management: Admin can oversee all activities on the platform.
+
 2.Order Tracking: Admin monitors the order statuses and can mark them as delivered.
 
 Order Flow:
 1.Processing: When a customer places an order, it enters a processing state.
+
 2.Vendor Notification: The order is sent to the corresponding vendor.
+
 3.Shipping: Vendors mark the order as shipped.
+
 4.Admin Review: Admin can update the order status to delivered or not.
 
 --------------------------------------------------------------------------------------------------------------
