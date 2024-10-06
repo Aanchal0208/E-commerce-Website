@@ -14,7 +14,7 @@ Open XAMPP and start the Apache Server and MySql databases.
 
 Created Database as acme_project_ecommerce.
 
-Make 4 tables in that database user, products, cart and orders which I give in screenshot as well.
+Make 4 tables in that database user, product, cart and orders which I give in screenshot as well.
 
 ----------------------------------------------------------------------------------------------------------
 
@@ -24,17 +24,16 @@ Make 4 tables in that database user, products, cart and orders which I give in s
 
 2.Product Details: Manage images, descriptions, and pricing of products.
 
+3.Order Tracking: Admin monitors the order statuses and can mark them as delivered.
+
+4..Platform Management: Admin can oversee all activities on the platform.
+
 >>Customer Role:
 1.Product Browsing: Customers can view all available products.
 
 2.Cart Functionality: Add products to a cart for later purchase.
 
 3.Order Placement: Customers can purchase products and track their orders.
-
->>Admin Role:
-1.Platform Management: Admin can oversee all activities on the platform.
-
-2.Order Tracking: Admin monitors the order statuses and can mark them as delivered.
 
 Order Flow:
 1.Processing: When a customer places an order, it enters a processing state.
