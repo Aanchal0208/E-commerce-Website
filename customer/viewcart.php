@@ -1,0 +1,89 @@
+<?php 
+    include "authguard.php";
+    include "menu.html";
+    include "../shared/connection.php";
+
+
+$sql_result = mysqli_query($conn, "SELECT *
+                                   FROM cart 
+                                   JOIN product ON cart.pid = product.pid 
+                                   WHERE cart.userid = $_SESSION[userid]");
+
+
+
+echo "<div class='container my-5'>";  
+echo "<div class='row g-4'>";         
+echo "<h1 class='text-center text-primary mt-1'>View Cart Product</h1>";
+
+while ($dbrow = mysqli_fetch_assoc($sql_result)) {
+    
+    echo "<div class='col-12 col-sm-6 col-md-4 col-lg-3'>"; 
+    echo "<div class='card h-100'>";                        
+    echo "<img src='" . $dbrow['impath'] . "' class='card-img-top' alt='Product Image'>";
+    echo "<div class='card-body'>";
+    echo "<h4 class='card-title text-center text-danger'>" . $dbrow['name'] . "</h4>";
+    echo "<h5 class='card-subtitle text-center mb-2 text-muted'><span>Rs </span>" . $dbrow['price'] . " </h5>";
+    echo "<p class='card-text text-center'>" . $dbrow['detail'] . "</p>";
+    echo "<div class='text-center'>";
+    echo "<a href='removecart.php?cartid=" . $dbrow['cartid'] . "'>";
+    echo "<button type='button' class='btn btn-outline-danger '>Remove from Cart</button>";
+    echo "</a>";
+    echo "</div>";
+    echo "</div>";
+    echo "</div>";  
+    echo "</div>";  
+}
+
+
+echo "</div>";
+echo "</div>";
+
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <style>
+        .card-img-top{
+            width: 230px;
+            height: 230px;
+        }
+        .card{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            padding: 15px;
+            border-radius: 20px;
+        }
+        .card:hover{
+            transform: translate(0px, -8px);
+        }
+        .card-title{
+            font-size: 40px;
+            font-weight: bold;
+
+        }
+        .card-subtitle{
+            font-size: 20px;
+        }
+        .btn{
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+<?php 
+
+include "../shared/footer.html";
+
+?>
