@@ -60,7 +60,7 @@ $result = $conn->query($sql);
 <body>
 
 <div class="container">
-    <h1 class="text-center text-primary mb-4">Your All Placed Orders</h1>
+    <h1 class="text-center text-primary mb-4">All Placed Orders</h1>
 
     <?php if ($result->num_rows > 0): ?>
         <table class="table table-striped table-hover">
