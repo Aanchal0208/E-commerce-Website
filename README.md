@@ -36,7 +36,7 @@ Make 4 tables in that database user, product, cart and orders which I give in sc
 
 3.Order Placement: Customers can purchase products and track their orders.
 
-Order Flow:
+>>Order Flow:
 
 1.Processing: When a customer places an order, it enters a processing state.
 
