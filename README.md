@@ -26,7 +26,7 @@ Make 4 tables in that database user, product, cart and orders which I give in sc
 
 3.Order Tracking: Admin monitors the order statuses and can mark them as delivered.
 
-4..Platform Management: Admin can oversee all activities on the platform.
+4.Platform Management: Admin can oversee all activities on the platform.
 
 >>Customer Role:
 
