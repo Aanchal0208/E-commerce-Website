@@ -29,6 +29,7 @@ Make 4 tables in that database user, product, cart and orders which I give in sc
 4..Platform Management: Admin can oversee all activities on the platform.
 
 >>Customer Role:
+
 1.Product Browsing: Customers can view all available products.
 
 2.Cart Functionality: Add products to a cart for later purchase.
@@ -36,6 +37,7 @@ Make 4 tables in that database user, product, cart and orders which I give in sc
 3.Order Placement: Customers can purchase products and track their orders.
 
 Order Flow:
+
 1.Processing: When a customer places an order, it enters a processing state.
 
 2.Vendor Notification: The order is sent to the corresponding vendor.
