@@ -2,6 +2,7 @@ Installation--------------------------------------------------------------------
 Clone the repository:
 
 git clone  https://github.com/Aanchal0208/E-commerce-Website
+
 Save folder into C:/xampp/htdocs
 
 Open XAMPP and start the Apache Server and MySql databases.
